@@ -309,6 +309,20 @@ task copyDownloadableDepsToLibs(type: Copy) {
     into 'libs'
 }
 
+task downloadDependencies {
+  description "Pre-downloads *most* dependencies"
+  doLast {
+    configurations.getAsMap().each { name, config ->
+      println "Retrieving dependencies for $name"
+      try {
+        config.files
+      } catch (e) {
+        project.logger.info e.message // some cannot be resolved, silentlyish skip them
+      }
+    }
+  }
+}
+
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
 
 def isNewArchitectureEnabled() {
