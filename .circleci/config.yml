@@ -71,8 +71,6 @@ jobs:
 
       - run: 
           command: bundle install
-      - run: 
-          command: bundle install
 
       - save_cache:
           key: bundle-v1-{{ checksum "Gemfile.lock" }}-{{ arch }}
@@ -94,8 +92,8 @@ jobs:
           
       - store_test_results:
           path: output/scan
-            
-  workflows:
+
+workflows:
   node-android-ios:
     jobs:
       - node
