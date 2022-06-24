@@ -65,19 +65,19 @@ workflows:
       # Build the iOS app in release mode and do not run tests
       - rn/ios_build:
           name: build_ios_release
-          project_path: ios/CircleCIRNSignedRelease.xcodeproj
+          project_path: ios/CircleCiRNSignedRelease.xcodeproj
           device: "iPhone 11"
           build_configuration: Release
-          scheme: CircleCIRNSignedRelease
+          scheme: CircleCiRNSignedRelease
           requires:
             - analyse_js
 
       # Build and test the iOS app in release mode
       - rn/ios_build_and_test:
-          project_path: "ios/CircleCIRNSignedRelease.xcodeproj"
+          project_path: "ios/CircleCiRNSignedRelease.xcodeproj"
           device: "iPhone 11"
           build_configuration: "Release"
-          scheme: "CircleCIRNSignedRelease"
+          scheme: "CircleCiRNSignedRelease"
           detox_configuration: "ios.sim.release"
           requires:
             - analyse_js
