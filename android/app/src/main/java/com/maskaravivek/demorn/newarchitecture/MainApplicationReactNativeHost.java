@@ -1,4 +1,4 @@
-package com.circlecirnsignedrelease.newarchitecture;
+package com.maskaravivek.demorn.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.circlecirnsignedrelease.BuildConfig;
-import com.circlecirnsignedrelease.newarchitecture.components.MainComponentsRegistry;
-import com.circlecirnsignedrelease.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.maskaravivek.demorn.BuildConfig;
+import com.maskaravivek.demorn.newarchitecture.components.MainComponentsRegistry;
+import com.maskaravivek.demorn.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

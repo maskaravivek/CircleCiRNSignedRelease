@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface CircleCiRNSignedReleaseTests : XCTestCase
+@interface CircleCiSignedRNAppTests : XCTestCase
 
 @end
 
-@implementation CircleCiRNSignedReleaseTests
+@implementation CircleCiSignedRNAppTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL (^)(UIView *view))test
 {

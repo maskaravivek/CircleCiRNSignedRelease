@@ -1,4 +1,4 @@
-package com.circlecirnsignedrelease.newarchitecture.modules;
+package com.maskaravivek.demorn.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;
